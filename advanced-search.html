@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Пошук - Custom Google</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #4285f4;
+            color: #ffffff;
+            padding: 10px;
+            text-align: right;
+        }
+
+        .search-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .options-container {
+            text-align: left;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 12px;
+            background-color: #4285f4;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">Google Пошук</a> |
+        <a href="image-search.html">Image Пошук</a> |
+        <a href="#">Advanced Пошук</a>
+    </header>
+
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="GET">
+            <label for="all-words">Find pages with all these words:</label>
+            <input type="text" name="as_q" id="all-words" required>
+
+            <label for="exact-phrase">Find pages with this exact word or phrase:</label>
+            <input type="text" name="as_epq" id="exact-phrase">
+
+            <label for="any-words">Find pages with any of these words:</label>
+            <input type="text" name="as_oq" id="any-words">
+
+            <label for="none-words">Find pages with none of these words:</label>
+            <input type="text" name="as_eq" id="none-words">
+
+            <input type="submit" value="Advanced Пошук">
+        </form>
+    </div>
+</body>
+</html>

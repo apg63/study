@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Google Пошук</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #4285f4;
+            color: #ffffff;
+            padding: 10px;
+            text-align: right;
+        }
+
+        .search-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 12px;
+            background-color: #4285f4;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .options-container {
+            text-align: left;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .advanced-search-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 12px;
+            background-color: #4285f4;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .lucky-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 12px;
+            background-color: #4285f4;
+            color: #ffffff;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>S
+    <header>
+        <a href="#">Google Пошук</a> |
+        <a href="image-search.html">Image Пошук</a> |
+        <a href="advanced-search.html">Advanced Пошук</a>
+    </header>
+
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" placeholder="Пошук Google" required>
+            <input type="submit" value="Пошук Search">
+        </form>
+    </div>
+
+    <div class="options-container">
+        <button class="advanced-search-button" onclick="window.location.href='advanced-search.html'">Advanced Search</button>
+    </div>
+
+    <button class="lucky-button" onclick="window.location.href='https://www.google.com/search?q=I%27m+Feeling+Lucky'">I'm Feeling Lucky</button>
+</body>
+</html>
